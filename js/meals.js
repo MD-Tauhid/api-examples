@@ -49,6 +49,9 @@ const displayMealDetails = meal => {
     detailDiv.innerHTML = `
         <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
         <div class="card-body">
+            <h5 class="card-title">Name: ${meal.strMeal}</h5>
+            <p class="card-text">Ingredient: ${meal.strIngredient1}, ${meal.strIngredient2}, ${meal.strIngredient3}</p>
+            <p class="card-text">Measure: ${meal.strMeasure1}, ${meal.strMeasure2}, ${meal.strMeasure3}</p>
             <p class="card-text">${meal.strInstructions.slice(0, 300)}</p>
         </div>
     `;
