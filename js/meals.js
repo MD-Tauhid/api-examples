@@ -7,7 +7,7 @@ const loadMeals = search => {
 
 const displayMeals = meals => {
     const mealsContainer = document.getElementById('meals-container')
-    mealsContainer.innerHTML = ``;
+    mealsContainer.textContent = ``;
     meals.forEach(meal => {
         // console.log(meal);
         const mealDiv = document.createElement('div');
